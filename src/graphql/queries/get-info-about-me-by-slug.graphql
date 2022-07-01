@@ -1,0 +1,13 @@
+query getInfoAboutMeBySlug($slug: String) {
+  aboutme(where: {slug: $slug}) {
+    email
+    linkGithub
+    linkLinkedin
+    name
+    occupation
+    id
+    linkPictureGitHub
+    country
+    description
+  }
+}

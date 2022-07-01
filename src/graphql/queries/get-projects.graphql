@@ -1,0 +1,11 @@
+query getProjects {
+   projects {
+    description
+    id
+    title
+    linkProject
+    picture {
+      fileName
+    }
+  }
+}
