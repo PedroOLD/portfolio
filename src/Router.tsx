@@ -4,13 +4,12 @@ import { Home } from "./pages/Home";
 import { cliente } from "./lib/Cliente";
 
 
-export function Router () {
+export function Router () { 
     return (
         <ApolloProvider client={ cliente }>
             <BrowserRouter>
                 <Routes>
-                    <Route  path="/" element={<Navigate to="/pedro-henrique" />} />
-                    <Route path="/:slug" element={<Home/>} />
+                    <Route  path="/" element={<Home/>} />
                 </Routes>
             </BrowserRouter>
         </ApolloProvider>

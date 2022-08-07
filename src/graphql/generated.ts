@@ -5131,7 +5131,7 @@ export type GetInfoAboutMeBySlugQuery = { __typename?: 'Query', aboutme?: { __ty
 export type GetProjectsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetProjectsQuery = { __typename?: 'Query', projects: Array<{ __typename?: 'Project', description?: string | null, id: string, title: string, linkProject: string, picture: { __typename?: 'Asset', fileName: string } }> };
+export type GetProjectsQuery = { __typename?: 'Query', projects: Array<{ __typename?: 'Project', description?: string | null, id: string, title: string, linkProject: string, picture: { __typename?: 'Asset', url: string }, technologies: Array<{ __typename?: 'Technology', id: string, title: string }> }> };
 
 
 export const GetInfoAboutMeBySlugDocument = gql`
@@ -5185,7 +5185,11 @@ export const GetProjectsDocument = gql`
     title
     linkProject
     picture {
-      fileName
+      url
+    }
+    technologies {
+      id
+      title
     }
   }
 }

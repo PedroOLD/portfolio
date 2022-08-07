@@ -1,11 +1,15 @@
 query getProjects {
-   projects {
+  projects {
     description
     id
     title
     linkProject
     picture {
-      fileName
+      url
+    }
+    technologies {
+      id
+      title
     }
   }
 }

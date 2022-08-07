@@ -6,10 +6,10 @@ import { Wellcome } from "../components/Wellcome";
 import { useGetInfoAboutMeBySlugQuery } from "../graphql/generated";
 
 export function Home () {
-    const { slug }  = useParams<{slug: string}>()
+    const slug = "pedro-henrique"
 
     if (slug) {
-        const { data } = useGetInfoAboutMeBySlugQuery({
+        const { data } = useGetInfoAboutMeBySlugQuery({ 
             variables: {
                 slug: slug
             }
