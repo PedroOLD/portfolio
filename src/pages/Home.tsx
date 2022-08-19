@@ -7,7 +7,7 @@ import { useGetInfoAboutMeBySlugQuery } from "../graphql/generated";
 
 export function Home () {
     const slug = "pedro-henrique"
-
+    
     if (slug) {
         const { data } = useGetInfoAboutMeBySlugQuery({ 
             variables: {
