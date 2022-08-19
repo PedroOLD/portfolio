@@ -8,15 +8,9 @@ import { OpenModal } from '../ModalTachnologies/OpenModal';
 // @types
 import { SetPropsCardProject, OpenModalStateCardProject} from './@types/CardProjectProps';
 
-
-console.log(ContextModal);
-
-
-
 export function CardProject({nameProject, description, urlImage, technologies}: SetPropsCardProject) {
 
     const [modal, setModal] = React.useState<boolean>();
-    
     
     return (
 
@@ -30,7 +24,6 @@ export function CardProject({nameProject, description, urlImage, technologies}: 
                     />
                 </div>
                 
-
                 <div>
                     <strong className="text-white text-2xl font-medium mt-2">{nameProject}</strong>
 
