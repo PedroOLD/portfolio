@@ -10,7 +10,7 @@ import { SetPropsCardProject, OpenModalStateCardProject} from './@types/CardProj
 
 export function CardProject({nameProject, description, urlImage, technologies}: SetPropsCardProject) {
 
-    const [modal, setModal] = React.useState<boolean>();
+    const [modal, setModal] = React.useState<OpenModalStateCardProject | boolean>();
     
     return (
 

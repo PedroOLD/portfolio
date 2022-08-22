@@ -1,0 +1,9 @@
+query getExperienceById ($id: ID) {
+  experience(where: {id: $id}) {
+    company
+    data
+    descriptionWork
+    linkcompany
+    occupation
+  }
+}
