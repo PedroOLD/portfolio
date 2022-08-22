@@ -10,7 +10,6 @@ export function ListExperience({ setExperience }: Props) {
     const OpenDescriptionExperience = (event: any ) => {
         const IdSectionVariable = event.target.id;
         setExperience(IdSectionVariable);
-        console.log('foi')
     }
 
   return (

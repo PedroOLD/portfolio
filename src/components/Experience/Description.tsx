@@ -6,7 +6,6 @@ interface Props {
 }
 
 export function Description( { idDescription }: Props) {
-    console.log(idDescription);
 
     const { data } = useGetExperienceByIdQuery({
         variables: {
@@ -17,14 +16,14 @@ export function Description( { idDescription }: Props) {
     return (
         <div>
             <div className='flex justify-between'>
-                <h2 className='text-2xl pb-6'> {data?.experience?.company} </h2>
-                <p className='text-base'>data trampo</p>
+                <h2 className='text-2xl pb-6'> {data?.experience?.occupation} </h2>
+                <p className='text-base'> {data?.experience?.data} </p>
             </div>
 
-            <a href="" className='block text-blue-900 text-base pb-6'>Dimio</a>
+            <a href={`${data?.experience?.linkcompany}`} className='block text-blue-900 text-base pb-6'> {data?.experience?.company} </a>
             
             <p className='text-lg text-gray-300 font-[300]'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, consequuntur corporis a molestias vitae voluptatibus maxime dicta. Molestias laborum assumenda error veniam, harum, sed, nam ex consectetur sapiente quasi adipisci!
+                {data?.experience?.descriptionWork}
             </p>
             
         </div>
