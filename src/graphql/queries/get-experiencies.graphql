@@ -1,0 +1,6 @@
+query getExperiencies  {
+  experiences {
+    id
+    company
+  }
+}

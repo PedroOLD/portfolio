@@ -12,3 +12,4 @@ export interface SetPropsCardProject {
 export interface OpenModalStateCardProject {
     state: React.Dispatch<SetStateAction<boolean>>
 }
+
