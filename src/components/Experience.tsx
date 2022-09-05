@@ -6,7 +6,7 @@ import { ListExperience } from './Experience/ListExperience';
 
 export function Experience() {
     
-    const [showSectionExperience, setShowSectionExperience] = React.useState<string>('teste');
+    const [showSectionExperience, setShowSectionExperience] = React.useState<string>('cl71dtbmq1x7o0cki1fv3ih1c');
 
     return (
         <div className='flex flex-col text-white p-16 gap-8 bg-neutral-800'>
